@@ -1,17 +1,38 @@
-.fade-in-logo {
-  width: 200px;
-  display: block;
-  margin: 50px auto 20px;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Splash screen */
+#splash {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.splash-logo {
+  width: 60vw;
+  max-width: 600px;
   opacity: 0;
-  animation: fadeIn 2s ease-in-out forwards;
+  animation: logoFade 2s ease forwards;
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
+@keyframes logoFade {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
 }
 
+/* Section styles */
 section {
   max-width: 800px;
   margin: 40px auto;
@@ -21,12 +42,22 @@ section {
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+/* Header style (if re-added later) */
+header {
+  background: #333;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Services list */
 .services ul {
   list-style: none;
   padding: 0;
   line-height: 1.8;
 }
 
+/* Slideshow gallery */
 .slideshow {
   display: flex;
   gap: 10px;
@@ -38,6 +69,7 @@ section {
   border-radius: 10px;
 }
 
+/* Contact form */
 .contact form input,
 .contact form textarea {
   width: 100%;
@@ -63,3 +95,10 @@ section {
   background: #218838;
 }
 
+/* Footer */
+footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 15px;
+}
