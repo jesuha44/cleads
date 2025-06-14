@@ -70,9 +70,13 @@
   <!-- Script for splash transition -->
   <script>
     document.getElementById("splash").addEventListener("click", function () {
-      document.getElementById("splash").style.display = "none";
-      document.getElementById("mainContent").style.display = "block";
-      window.scrollTo(0, 0);
+      const splash = document.getElementById("splash");
+      splash.classList.add("fade-out");
+      setTimeout(() => {
+        splash.style.display = "none";
+        document.getElementById("mainContent").style.display = "block";
+        window.scrollTo(0, 0);
+      }, 1000); // matches fade duration
     });
 
     document.getElementById('leadForm').addEventListener('submit', function(e) {
@@ -84,3 +88,4 @@
 
 </body>
 </html>
+
