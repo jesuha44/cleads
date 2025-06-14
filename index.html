@@ -16,25 +16,27 @@
   <!-- Main Website Content -->
   <div id="mainContent" style="display: none;">
     <main>
-      <section class="mission">
-        <h2>Our Mission</h2>
-        <p>Premier Innovations' main focus is quality of the service. Making it efficient for our happy customers and reliable technicians. From small to big projects we're ready to tackle any challenge.</p>
+
+      <section class="hero">
+        <h1>Top-Tier Craftsmanship. Reliable Service.</h1>
+        <p>From drywall to flooring, Premier Innovations brings your home improvement visions to life.</p>
+        <a href="#contact" class="cta-button">Request Your Free Quote</a>
       </section>
 
-      <section class="consultation">
-        <h2>Schedule Your Free Consultation</h2>
-        <p>Contact us today and let’s bring your vision to life.</p>
+      <section class="mission">
+        <h2>Our Mission</h2>
+        <p>Premier Innovations’ main focus is quality of the service. Making it efficient for our happy customers and reliable technicians. From small to big projects we’re ready to tackle any challenge.</p>
       </section>
 
       <section class="services">
         <h2>Our Services</h2>
-        <ul>
-          <li>Drywall</li>
-          <li>Paint</li>
-          <li>Carpentry</li>
-          <li>Home Maintenance</li>
-          <li>Flooring & Tile</li>
-        </ul>
+        <div class="service-buttons">
+          <div class="service-pill">Drywall</div>
+          <div class="service-pill">Paint</div>
+          <div class="service-pill">Carpentry</div>
+          <div class="service-pill">Home Maintenance</div>
+          <div class="service-pill">Flooring & Tile</div>
+        </div>
       </section>
 
       <section class="gallery">
@@ -46,7 +48,7 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <h2>Contact Us 24/7</h2>
         <p>Call us: <a href="tel:7026838872">702-683-8872</a></p>
         <p>Email: <a href="mailto:Premier.Innovationslv@gmail.com">Premier.Innovationslv@gmail.com</a></p>
@@ -76,7 +78,7 @@
         splash.style.display = "none";
         document.getElementById("mainContent").style.display = "block";
         window.scrollTo(0, 0);
-      }, 1000); // matches fade duration
+      }, 1000);
     });
 
     document.getElementById('leadForm').addEventListener('submit', function(e) {
