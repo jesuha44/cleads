@@ -3,29 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Juans Construction</title>
+  <title>Premier Innovations</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Juans Construction</h1>
-    <p>Quality Builds. Trusted Professionals.</p>
-  </header>
+  <div id="logoContainer">
+    <img src="logo.png" alt="Premier Innovations Logo" class="fade-in-logo" />
+  </div>
 
-  <main class="form-section">
-    <h2>Get a Free Quote</h2>
-    <form id="leadForm">
-      <input type="text" placeholder="Full Name" required />
-      <input type="tel" placeholder="Phone Number" required />
-      <input type="email" placeholder="Email Address" required />
-      <textarea placeholder="Tell us about your project..." required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <p id="thankYou" style="display: none;">Thanks! We'll reach out shortly.</p>
+  <main>
+    <section class="mission">
+      <h2>Our Mission</h2>
+      <p>Premier Innovations' main focus is quality of the service. Making it efficient for our happy customers and reliable technicians. From small to big projects we're ready to tackle any challenge.</p>
+    </section>
+
+    <section class="consultation">
+      <h2>Schedule Your Free Consultation</h2>
+      <p>Contact us today and let’s bring your vision to life.</p>
+    </section>
+
+    <section class="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Drywall</li>
+        <li>Paint</li>
+        <li>Carpentry</li>
+        <li>Home Maintenance</li>
+        <li>Flooring & Tile</li>
+      </ul>
+    </section>
+
+    <section class="gallery">
+      <h2>Gallery</h2>
+      <div class="slideshow">
+        <img src="gallery1.jpg" alt="Project 1">
+        <img src="gallery2.jpg" alt="Project 2">
+        <img src="gallery3.jpg" alt="Project 3">
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Us 24/7</h2>
+      <p>Call us: <a href="tel:7026838872">702-683-8872</a></p>
+      <p>Email: <a href="mailto:Premier.Innovationslv@gmail.com">Premier.Innovationslv@gmail.com</a></p>
+      <h3>Request a Free Quote</h3>
+      <form id="leadForm">
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="text" placeholder="Subject" required />
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="thankYou" style="display: none;">Thanks! We'll reach out shortly.</p>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Juans Construction. All rights reserved.</p>
+    <p>&copy; 2025 Premier Innovations. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
