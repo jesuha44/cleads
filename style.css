@@ -187,7 +187,7 @@ footer {
   padding: 15px;
 }
 
-/* Link color fix */
+/* Link color + contact bold */
 a {
   color: #e0e0e0;
   text-decoration: none;
@@ -198,6 +198,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.contact a {
+  font-weight: bold;
+}
+
 /* Animation */
 @keyframes fadeIn {
   to {
@@ -205,3 +209,4 @@ a:hover {
     transform: translateY(0);
   }
 }
+
