@@ -187,6 +187,17 @@ footer {
   padding: 15px;
 }
 
+/* Link color fix */
+a {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
 /* Animation */
 @keyframes fadeIn {
   to {
